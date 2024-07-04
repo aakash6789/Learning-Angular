@@ -1,2 +1,13 @@
-<h1>task works!</h1>
+<button (click)="onAddTask()">Add task</button>
 <h2>{{name}}</h2>
+@if (isTrue) {
+    <form>
+        <input type="text" ngModel/>
+        <button>Submit</button>
+    </form>
+   @if(tasks.length>1){
+    
+   }@else {
+       <div>Empty</div>
+   }
+}

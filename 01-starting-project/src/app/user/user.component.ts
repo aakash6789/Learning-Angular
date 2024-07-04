@@ -1,9 +1,10 @@
 import { Component,signal,Input, input, computed, Output, EventEmitter, output } from '@angular/core';
 import { DUMMY_USERS } from '../dummy-users';
+import { TaskComponent } from '../task/task.component';
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [],
+  imports: [TaskComponent],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
